@@ -8,7 +8,7 @@ export default function Home() {
         <NavBar />
       </header>
       <main>
-        <div className="infos">
+        <div className="text-sm text-center ml-3 mr-3 font-mono">
           <p>
             Bienvenue sur ChemicalDreams, ici, vous trouverez des informations
             sur les drogues et les médicaments. Nous sommes là pour vous fournir
@@ -17,10 +17,10 @@ export default function Home() {
             les troubles liés à ces substances. Nous croyons en la
             sensibilisation aux risques associés à l'utilisation de ces
             substances et à leur impact sur la santé. Consultez notre site pour
-            en savoir plus sur les différentes drogues et médicaments
-            disponibles.
+            en savoir plus sur les différentes drogues et médicaments.
           </p>
         </div>
+        <div className="info_tile" />
       </main>
     </div>
   );

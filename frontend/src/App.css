@@ -19,3 +19,7 @@ code {
   height: 20vw;
   pointer-events: none;
 }
+
+.info_tile {
+  border-bottom: 2px solid #6d55bb;
+}
