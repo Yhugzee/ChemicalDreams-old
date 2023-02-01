@@ -21,6 +21,17 @@ export default function Home() {
           </p>
         </div>
         <div className="info_tile" />
+        <span>
+          <p className="rounded-lg border-blue-700 h-32 w-50 p-4 border-4 mt-6 ml-4 mr-4">
+            Article 1
+          </p>
+          <p className="rounded-lg border-blue-700 h-32 w-50 p-4 border-4 mt-6 ml-4 mr-4">
+            Article 2
+          </p>
+          <p className="rounded-lg border-blue-700 h-32 w-50 p-4 border-4 mt-6 ml-4 mr-4">
+            Article 3
+          </p>
+        </span>
       </main>
     </div>
   );
