@@ -1,50 +1,16 @@
-import { useState, useRef, useContext } from "react";
+import React, { useState, useRef } from "react";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Login.css";
 
 export default function Login() {
-  const { setAuth } = useContext();
-  const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState("password");
-  const [errorInput, setErrorInput] = useState(false);
+  const [errorInput] = useState(false);
   const emailRef = useRef();
   const passwordRef = useRef();
 
-  const handleSubmit = () => {
-    const dataPost = {
-      email: emailRef.current.value,
-      password: passwordRef.current.value,
-    };
-    fetch("http://localhost:5000/login", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(dataPost),
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        const { token, user } = data;
-        const { role, id } = user;
-        if (token) {
-          setAuth((oldAuth) => ({
-            ...oldAuth,
-            isAuthenticated: true,
-            token,
-            role,
-            id,
-          }));
-          navigate("/");
-        } else {
-          setErrorInput(true);
-        }
-      })
+  function handleSubmit() {}
 
-      .catch((err) => {
-        console.error(err);
-      });
-  };
   return (
     <div className="wrapper">
       <Link to="/" className="Logo_content">

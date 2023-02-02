@@ -70,8 +70,12 @@ export default function NavBar() {
       </Link>
       {(toggleMenu || width > breakpoint) && (
         <ul className="liste">
-          <li className="items">Accueil</li>
-          <li className="items">Listes</li>
+          <li className="items">
+            <Link to="/">Accueil</Link>
+          </li>
+          <li className="items">
+            <Link to="/liste">Listes</Link>
+          </li>
           <li className="items">A propos</li>
         </ul>
       )}
