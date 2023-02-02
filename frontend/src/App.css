@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Itim";
+  src: url("./fonts/Itim-Regular.ttf");
+}
+
 body {
   margin: 0;
 }
@@ -20,6 +25,17 @@ code {
   pointer-events: none;
 }
 
-.info_tile {
-  border-bottom: 2px solid #6d55bb;
+/*.info_tile {*/
+/*  border-bottom: 2px solid #6d55bb;*/
+/*}*/
+
+.infos {
+  font-family: Itim, sans-serif;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border: 0;
+  border-radius: 10px;
+  color: white;
+  background: rgb(234, 65, 255);
+  background: linear-gradient(90deg, rgba(234, 65, 255, 1) 0%, rgba(58, 168, 255, 1) 100%);
 }
