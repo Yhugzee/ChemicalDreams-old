@@ -8,7 +8,7 @@ export default function Home() {
         <NavBar />
       </header>
       <main>
-        <div className="infos text-sm text-center ml-3 mr-3 font-mono">
+        <div className="infos text-md text-center ml-3 mr-3 font-mono">
           <p>
             Bienvenue sur ChemicalDreams, ici, vous trouverez des informations
             sur les drogues et les médicaments. Nous sommes là pour vous fournir
@@ -22,15 +22,15 @@ export default function Home() {
         </div>
         <div className="info_tile" />
         <span>
-          <p className="rounded-lg border-blue-400 h-32 w-50 p-4 border-2 mt-6 ml-4 mr-4">
-            Article 1
-          </p>
-          <p className="rounded-lg border-blue-400 h-32 w-50 p-4 border-2 mt-6 ml-4 mr-4">
-            Article 2
-          </p>
-          <p className="rounded-lg border-blue-400 h-32 w-50 p-4 border-2 mt-6 ml-4 mr-4">
-            Article 3
-          </p>
+          <div className="rounded-lg border-blue-400 h-32 w-50 p-4 border-2 mt-6 ml-4 mr-4">
+            <h1 className="text-xl font-bold">Article 1</h1>
+          </div>
+          <div className="rounded-lg border-blue-400 h-32 w-50 p-4 border-2 mt-6 ml-4 mr-4">
+            <h1 className="text-xl font-bold">Article 2</h1>
+          </div>
+          <div className="rounded-lg border-blue-400 h-32 w-50 p-4 border-2 mt-6 ml-4 mr-4">
+            <h1 className="text-xl font-bold">Article 3</h1>
+          </div>
         </span>
       </main>
     </div>
