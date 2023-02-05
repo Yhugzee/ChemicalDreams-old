@@ -10,7 +10,7 @@ function Liste() {
         <li>
           <a href="/liste/drogue/cannabis" className="card">
             <img
-              src="src/assets/illustrations/illustration-1.png"
+              src="src/assets/illustrations/illustration-1.svg"
               className="card__image"
               alt=""
             />
@@ -21,7 +21,7 @@ function Liste() {
                 </svg>
                 <img
                   className="card__thumb"
-                  src="src/assets/chemicald-cannabis.svg"
+                  src="src/assets/illustrations-logo/chemicald-cannabis.svg"
                   alt=""
                 />
                 <div className="card__header-text">
@@ -38,7 +38,7 @@ function Liste() {
         <li>
           <a href="/liste/drogue/lsd" className="card">
             <img
-              src="src/assets/illustrations/illustration-2.png"
+              src="src/assets/illustrations/illustration-2.svg"
               className="card__image"
               alt=""
             />
@@ -49,7 +49,7 @@ function Liste() {
                 </svg>
                 <img
                   className="card__thumb"
-                  src="src/assets/chemicald-lsd.svg"
+                  src="src/assets/illustrations-logo/chemicald-lsd.svg"
                   alt=""
                 />
                 <div className="card__header-text">
@@ -66,7 +66,7 @@ function Liste() {
         <li>
           <a href="/liste/drogue/mdma" className="card">
             <img
-              src="src/assets/illustrations/illustration-5.png"
+              src="src/assets/illustrations/illustration-5.svg"
               className="card__image"
               alt=""
             />
@@ -77,7 +77,7 @@ function Liste() {
                 </svg>
                 <img
                   className="card__thumb"
-                  src="src/assets/ChemicalD-MDMA.png"
+                  src="src/assets/illustrations-logo/ChemicalD-MDMA.svg"
                   alt=""
                 />
                 <div className="card__header-text">
@@ -94,7 +94,7 @@ function Liste() {
         <li>
           <a href="/liste/drogue/opiaces" className="card">
             <img
-              src="src/assets/illustrations/illustration-8.png"
+              src="src/assets/illustrations/illustration-8.svg"
               className="card__image"
               alt=""
             />
@@ -105,7 +105,7 @@ function Liste() {
                 </svg>
                 <img
                   className="card__thumb"
-                  src="src/assets/chemicald-opiaces.svg"
+                  src="src/assets/illustrations-logo/chemicald-opiaces.svg"
                   alt=""
                 />
                 <div className="card__header-text">
@@ -122,7 +122,7 @@ function Liste() {
         <li>
           <a href="/liste/drogue/ketamine" className="card">
             <img
-              src="src/assets/illustrations/illustration-7.png"
+              src="src/assets/illustrations/illustration-7.svg"
               className="card__image"
               alt=""
             />
@@ -133,7 +133,7 @@ function Liste() {
                 </svg>
                 <img
                   className="card__thumb"
-                  src="src/assets/ChemicalD-Ketamine.png"
+                  src="src/assets/illustrations-logo/chemicald-ketamine.svg"
                   alt=""
                 />
                 <div className="card__header-text">
@@ -141,8 +141,8 @@ function Liste() {
                 </div>
               </div>
               <p className="card__description">
-                Le LSD est un psychotrope souvent consommé sous forme de petits
-                morceaux de papier imprégnés de la substance.
+                La kétamine est un anesthésique général utilisé pour
+                l'anesthésie et le traitement de la douleur.
               </p>
             </div>
           </a>
