@@ -4,7 +4,7 @@
       "FROM node:8.9.2-alpine",
       "RUN mkdir -p /usr/src/app",
       "WORKDIR /usr/src/app",
-      "COPY ./dist /usr/src/app/",
+      "COPY ./front/ebddist /usr/src/app/",
       "ENV NODE_ENV production",
       "ENV PORT 80",
       "RUN npm install http-server -g",
