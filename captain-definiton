@@ -1,14 +1,17 @@
 {
-  "schemaVersion" :1 ,
-  "dockerfileLines" :[
-      "FROM node:8.9.2-alpine",
-      "RUN mkdir -p /usr/src/app",
-      "WORKDIR /usr/src/app",
-      "COPY ./front/ebddist /usr/src/app/",
-      "ENV NODE_ENV production",
-      "ENV PORT 80",
-      "RUN npm install http-server -g",
-      "EXPOSE 80",
-      "CMD [\"http-server\", \"-a\", \"0.0.0.0\", \"-p\", \"80\"]"
-  ]
-}
+    "schemaVersion": 2,
+    "dockerfileLines": [
+                          "FROM ghcr.io/premoweb/alpine-nginx-php7.3:latest",
+                          "USER root",
+                          "WORKDIR /var/www/html",
+                          "RUN mkdir -p /var/www/html/dist",
+                          "COPY backend/ /var/www/html/",
+                          "COPY frontend/dist/ /var/www/html/dist/",
+                          "RUN chown -R nobody.nobody /var/www/html",
+                          "ENV NODE_ENV production",
+                          "USER nobody",
+                          "ENV PORT 8080",
+                          "EXPOSE 8080",
+                          "CMD [\"/usr/bin/supervisord\", \"-c\", \"/etc/supervisor/conf.d/supervisord.conf\"]"
+                      ]
+   }
